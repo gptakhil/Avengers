@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> </title>
+    <style type="text/css">
+        body{
+            background-color: black;
+        }
+        h1{
+            /* font-size: 16px; */
+            line-height:1.4;
+            text-align: center;
+            color:white;
+        }
+
+        #maindiv{
+            overflow:hidden;
+            margin:auto;
+        }
+
+        #maindiv figure{
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation:20s slider infinite;
+        }
+
+        #maindiv figure img{
+            width:20%;
+            float:left;
+
+        }
+
+        @keyframes slider {
+            0%{
+            left:0;
+            }
+            20%{
+            left:0;
+            }
+            25%{
+            left:-100%;
+            }
+            45%{
+            left:-100%;
+            }
+            50%{
+            left:-200%;
+            }
+            70%{
+            left:-200%;
+            }
+            75%{
+            left:-300%;
+            }
+            95%{
+                left:-300%;
+            }
+            100%{
+                left:-400%;
+            }
+            
+        }
+        
+        .dot{
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color:white;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            .dot:hover {
+             background-color: #717171;
+            }
+        /* .maindiv{
+            width:70%;
+            height:400px;
+            position:absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            background-image: url("image.jpg");
+            background-size: 100% 100%;
+            animation: slider 20s infinite linear;
+
+        }
+
+        @keyframes slider {
+            0%{background-image: url("image.jpg");}
+            20%{background-image: url("slider1.jpg");}
+            40%{background-image: url("slider2.jpg");}
+            60%{background-image: url("slider3.jpg");}
+            80%{background-image: url("slider4.jpg");}
+            100%{background-image: url("image1.jpg");}
+            
+        } */
+    </style>
+</head>
+<body>
+    <h1> Building Slider </h1>
+    <div id="maindiv">
+        <figure>
+            <img src="image.jpg">
+            <img src="image1.jpg">
+            <img src="slider1.jpg">
+            <img src="slider2.jpg">
+            <!-- <img src="slider3.jpg"> -->
+            <img src="image.jpg">
+        </figure>
+
+        <div style="text-align:center">
+            <a href="image.jpg"><span class="dot"></span> </a>
+            <a href="image1.jpg"><span class="dot"></span> </a> 
+            <a  href="slider1.jpg"><span class="dot"></span></a> 
+          </div>
+    </div>
+</body>
+</html>

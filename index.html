@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> </title>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <style>
+    #body-image {
+      position: fixed;
+      z-index: -2;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: url("slider1.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      opacity: 0.7;
+      filter: alpha(opacity=40);
+      height: 100%;
+      width: 100%;
+    }
+
+    #header ul {
+      list-style: none;
+      margin: 0px;
+    }
+
+    #header ul li {
+      margin: 0px;
+      background-color: none;
+      width: 150px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      float: right;
+      color: white;
+      font-size: 18px;
+    }
+
+    #header ul li:hover {
+      cursor: pointer;
+      background-color: transparent;
+    }
+
+    #header ul ul {
+      margin: 0px;
+      display: none;
+    }
+
+    #header ul li:hover>ul {
+      display: block;
+    }
+
+    #maindiv {
+      overflow: hidden;
+      margin-left: 346px;
+      padding-top: 160px;
+    }
+
+    #maindiv figure {
+      overflow: hidden;
+      position: relative;
+      opacity: 0.8;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      animation: 20s slides infinite linear;
+    }
+
+    @keyframes slides {
+      0% {
+        left: 0;
+      }
+
+      20% {
+        left: 0;
+      }
+
+      25% {
+        left: -100%;
+      }
+
+      45% {
+        left: -100%;
+      }
+
+      50% {
+        left: -200%;
+      }
+
+      70% {
+        left: -200%;
+      }
+
+      75% {
+        left: -300%;
+      }
+
+      95% {
+        left: -300%;
+      }
+
+      100% {
+        left: -400%;
+      }
+
+    }
+
+    #maindiv figure img {
+      overflow: hidden;
+      width: 20%;
+      float: left;
+
+    }
+
+    .wrap {
+      width: 100%;
+      margin: 0px;
+      padding-top: 50px;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      background: radial-gradient(black, transparent);
+      width: 250px;
+      margin: 20px;
+      text-align: center;
+      font-family: arial;
+      float: left;
+      transition: width 2s ease-in-out, height 2s ease-in-out;
+      color:whitesmoke;
+    }
+
+    .card:hover {
+      width: 300px;
+      height: 300px;
+      font-style: italic;
+    }
+
+    .info {
+      background: radial-gradient(black, transparent);
+      color:white;
+      margin: 15px;
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+    }
+
+    .image-info {
+      width: 40%;
+      float: left;
+      padding-top: 100px;
+      margin-right: 20px;
+    }
+
+    .text-info {
+      width: 60%;
+      margin-left: 20px;
+      float: right;
+      padding-top: 100px;
+      font-size: 20px;
+      text-align: justify;
+    }
+
+    .footer ul {
+      margin: px;
+      list-style: none;
+    }
+
+    .footer ul li {
+      width: 150px;
+      text-align: center;
+      float: right;
+      color: white;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="body-image"></div>
+  <div id="header">
+    <div style="width:100px;height:100px;float: left; margin: 10px;">
+      <img style="width:100px;height:100px;" src="icon.ico">
+    </div>
+    <ul>
+      <li>Releases
+        <ul>
+          <li>link1</li>
+          <li>link2</li>
+          <li>link3</li>
+        </ul>
+      </li>
+      <li>About</li>
+      <li>Home</li>
+    </ul>
+  </div>
+
+  <div id="maindiv">
+    <figure>
+      <img src="hero1.jpg">
+      <img src="hero.2.jpg">
+      <img src="hero3.jpg">
+      <img src="hero4.jpg">
+      <img src="hero1.jpg">
+
+    </figure>
+  </div>
+  <div class="wrap">
+    <div class="card">
+
+      <img src="hero1.jpg" alt="Iron Man" style="width:100%;">
+      <h2>Iron Man</h2>
+      <p>Iron Man possesses a wealth of powers through his powered armor suit. These powers include super strength, the
+        ability to fly, durability, and a number of weapons. The primary weapons used by Iron Man are rays that are shot
+        from the palms of his gauntlets.</p>
+    </div>
+    <div class="card">
+      <img src="hero.2.jpg" alt="marvel" style="width:100%;">
+      <h2>Captain America</h2>
+      <p>Captain America represents the pinnacle of human physical perfection. While not superhuman, he is as strong as
+        a human being can be. He can lift (press) a maximum of 800 pounds with supreme effort.</p>
+    </div>
+    <div class="card">
+      <img src="hero3.jpg" alt="marvel" style="width:100%">
+      <h2>Almighty Thor</h2>
+      <p>He also possesses superhuman strength, speed, agility, durability and immunity to most diseases. Thor's
+        greatest weapon, and closest ally, is Mjolnir, an enchanted hammer forged from Uru metal, which has power over
+        storms and can generate energy blasts known as anti-force.</p>
+    </div>
+    <div class="card">
+      <img src="hero4.jpg" alt="marvel" style="width:100%">
+      <h2>Hulk</h2>
+      <p>The Hulk possesses superhuman strength of the Class 100 level, enabling him to lift (press) in excess of 100
+        tons. The Hulk only attains this strength level when he is enraged. In a totally, calm state his functional
+        strength is significantly less, perhaps in the 70 ton range.</p>
+    </div>
+    <div class="card">
+      <img src="hero7.jpg" alt="marvel" style="width:100%">
+      <h2>Black Widow</h2>
+      <p>Expert martial artist, with exceptional agility & athletic ability,Utilizes advanced weaponry including custom
+        stun batons & "Widow's Bite" bracelets capable of stunning enemies with electrical discharges.</p>
+    </div>
+    <div class="card">
+      <img src="hero6.jpg" alt="marvel" style="width:100%">
+      <h2>Hawkeye</h2>
+      <p>Hawkeye has trained himself to become an expert archer with near-perfect accuracy. He practices a minimum of
+        two hours per day to keep his skills honed. He has also had extensive training as an aerialist and acrobat, and
+        personal tutoring by Captain America in hand-to-hand combat.</p>
+    </div>
+
+  </div>
+
+  <div class="info">
+    <div class="image-info">
+      <img src="slider1.jpg" alt="Avengers" style="width:100%;">
+    </div>
+    <div class="text-info">
+      <p>The Avengers are a fictional team of superheroes appearing in American comic books published by Marvel Comics.
+        The team made its debut in The Avengers created by writer-editor Stan Lee and artist/co-plotter Jack Kirby. The
+        Avengers is Lee and Kirby's renovation of a previous superhero team,
+        All-Winners Squad, who appeared in comic books series published by Marvel Comics' predecessor Timely Comics.</p>
+
+      <p >The Avengers have appeared in a wide variety of media outside of comic books, including several different
+        animated
+        television series and direct-to-video films. The Avengers also play a central role in the Marvel Cinematic
+        Universe (MCU) being the focus in multiple MCU feature films, beginning with the eponymous 2012 live-action
+        film, The Avengers, and followed by the sequels, Age of Ultron (2015), Infinity War (2018), and Endgame (2019),
+        which were based on The Infinity Gauntlet storyline. The Avengers also featured in Captain America: Civil War
+        (2016) drawing loosely from the 2006 comics storyline "Civil War"</p>
+    </div>
+  </div>
+  <div class="footer">
+     <div>
+      <img style="width:50px;height:50px;float:right; margin: 10px;z-index:1;" src="youtube.png" alt="Youtube">
+      <img style="width:50px;height:50px;float:right; margin: 10px; z-index:1;" src="facebook.png" alt="facebook">
+      <img style="width:50px;height:50px;float:right; margin: 10px; z-index: 1;" src="instagram-sketched.png"
+        alt="Instagram">
+
+
+  </div>
+  </div>
+</body>
+
+</html>
